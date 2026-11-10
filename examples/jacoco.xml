@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE report PUBLIC "-//JACOCO//DTD Report 1.1//EN" "report.dtd">
+<report name="synthetic-pricing-change">
+  <package name="shop">
+    <sourcefile name="Pricing.java">
+      <line nr="5" mi="0" ci="5" mb="1" cb="1"/>
+      <line nr="6" mi="0" ci="6" mb="0" cb="0"/>
+      <line nr="7" mi="8" ci="0" mb="2" cb="0"/>
+    </sourcefile>
+  </package>
+</report>

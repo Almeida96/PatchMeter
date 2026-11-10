@@ -1,0 +1,17 @@
+diff --git a/src/main/java/shop/Pricing.java b/src/main/java/shop/Pricing.java
+index 1111111..2222222 100644
+--- a/src/main/java/shop/Pricing.java
++++ b/src/main/java/shop/Pricing.java
+@@ -4,2 +4,5 @@ public class Pricing {
+     public int total(int quantity, int price) {
+-        return quantity * price;
++        if (quantity < 0) throw new IllegalArgumentException("negative quantity");
++        int subtotal = Math.multiplyExact(quantity, price);
++        return quantity >= 10 ? subtotal * 9 / 10 : subtotal;
++        // A comment has no recorded bytecode instruction.
+diff --git a/README.md b/README.md
+index 3333333..4444444 100644
+--- a/README.md
++++ b/README.md
+@@ -0,0 +1 @@
++Bulk orders receive a discount.
